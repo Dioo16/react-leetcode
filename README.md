@@ -51,6 +51,41 @@ The `useBoolean` hook returns an object with the following properties:
 - `setFalse: () => void` - A function to set the boolean state to `false`
 - `toggle: () => void` - A function to toggle the boolean state
 
+### useCounter
+
+**Difficulty**: Easy  
+**Recommended Time**: 10 minutes
+
+Implement a `useCounter` hook that manages a counter state with additional convenience utility methods.
+
+**Example Usage**:
+
+```tsx
+export default function Component() {
+  const { count, increment, decrement, reset, setCount } = useCounter();
+
+  return (
+    <div>
+      <p>Counter: {count}</p>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+      <button onClick={reset}>Reset</button>
+    </div>
+  );
+}
+```
+
+**Arguments**:
+- `initialValue: number` - Initial value of the counter state. Defaults to `0` if not provided.
+
+**Returns**:
+The `useCounter` hook returns an object with the following properties:
+- `count: number` - The current counter value
+- `increment: () => void` - A function to increment the counter value
+- `decrement: () => void` - A function to decrement the counter value
+- `reset: () => void` - A function to reset the counter value to `initialValue`, or `0` if not provided
+- `setCount: (value: number) => void` - A function to set the counter value to `value`, it has the same signature as `setState`
+
 ---
 
 ## Tech Stack
