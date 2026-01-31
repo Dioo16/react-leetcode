@@ -86,6 +86,40 @@ The `useCounter` hook returns an object with the following properties:
 - `reset: () => void` - A function to reset the counter value to `initialValue`, or `0` if not provided
 - `setCount: (value: number) => void` - A function to set the counter value to `value`, it has the same signature as `setState`
 
+### Accordion
+
+**Difficulty**: Medium  
+**Recommended Time**: 20 minutes
+
+Build an Accordion component that displays a list of vertically stacked sections that each contain a title and content snippet.
+
+**Requirements**:
+- By default, all sections are collapsed and hidden from view
+- Clicking on a section title toggles the contents:
+  - If the section is collapsed, it will be expanded and the contents will be displayed
+  - If the section is expanded, it will be collapsed and the contents will be hidden
+- The sections are independent of each other
+
+**Example Structure**:
+
+```tsx
+<Accordion sections={[
+  {
+    title: 'Section 1',
+    content: 'Content for section 1'
+  },
+  {
+    title: 'Section 2', 
+    content: 'Content for section 2'
+  }
+]} />
+```
+
+**Notes**:
+- The focus is on functionality, not styling
+- You may modify the markup (e.g., adding ids, data attributes, replacing tags, etc.)
+- Think about ways to improve the user experience (bonus credit in interviews)
+
 ---
 
 ## Tech Stack
