@@ -120,6 +120,39 @@ Build an Accordion component that displays a list of vertically stacked sections
 - You may modify the markup (e.g., adding ids, data attributes, replacing tags, etc.)
 - Think about ways to improve the user experience (bonus credit in interviews)
 
+### Todo List
+
+**Difficulty**: Easy  
+**Recommended Time**: 15 minutes
+
+Build a Todo List app with the ability to add and remove tasks.
+
+**Requirements**:
+- Add new tasks on clicking the "Submit" button
+- The `<input>` field should be cleared upon successful addition
+- Remove tasks from the Todo List upon clicking the "Delete" button
+
+**Example Structure**:
+
+```tsx
+<div>
+  <h1>Todo List</h1>
+  <input type="text" placeholder="Add your task" />
+  <button>Submit</button>
+  <ul>
+    <li>
+      <span>Task 1</span>
+      <button>Delete</button>
+    </li>
+  </ul>
+</div>
+```
+
+**Notes**:
+- The focus is on functionality, not styling
+- You may modify the markup (e.g., adding ids, data attributes, replacing tags, etc.)
+- Think about ways to improve the user experience (bonus credit in interviews)
+
 ---
 
 ## Tech Stack
